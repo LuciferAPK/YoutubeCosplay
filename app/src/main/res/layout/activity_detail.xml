@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/activity_detail_xml_constraintlayout_scene">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#10000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.youtube.player.YouTubePlayerView
+            android:id="@+id/youtubePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+
+        <ImageView
+            android:id="@+id/ic_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:alpha="0"
+            android:background="@drawable/ic_close"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="@id/constraint" />
+
+        <ImageView
+            android:id="@+id/ic_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:alpha="0"
+            android:background="@drawable/ic_play"
+            app:layout_constraintBottom_toBottomOf="@id/ic_close"
+            app:layout_constraintEnd_toStartOf="@id/ic_close"
+            app:layout_constraintTop_toTopOf="@id/ic_close" />
+
+        <TextView
+            android:id="@+id/tv_name_video"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="12dp"
+            android:alpha="0"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Name video"
+            app:layout_constraintBottom_toBottomOf="@id/ic_play"
+            app:layout_constraintEnd_toStartOf="@id/ic_play"
+            app:layout_constraintStart_toEndOf="@id/youtubePlayer"
+            app:layout_constraintTop_toTopOf="@id/ic_play" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list_video"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/bottom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0"
+            android:background="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

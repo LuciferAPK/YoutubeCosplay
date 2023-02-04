@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="Thông tin cá nhân" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_password"-->
+<!--            android:icon="@drawable/ic_key"-->
+<!--            android:title="Đổi mật khẩu" />-->
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Đăng nhập/Đăng xuất" />
+    </group>
+</menu>

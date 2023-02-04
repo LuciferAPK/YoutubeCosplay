@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Youtube Cosplay</string>
+
+    <string name="home">Trang chủ</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="channel">Kênh của bạn</string>
+    <string name="lib">Thư viện</string>
+    <string name="recent">Gần đây</string>
+    <string name="history">Video đã xem</string>
+    <string name="myVideo">Video của bạn</string>
+    <string name="videoDownload">Video tải xuống</string>
+    <string name="myFilm">Phim của bạn</string>
+    <string name="after">Xem sau</string>
+    <string name="playList">Danh sách phát</string>
+    <string name="newPlaylist">Danh sách phát mới</string>
+    <string name="videoLike">Video đã thích</string>
+</resources>
